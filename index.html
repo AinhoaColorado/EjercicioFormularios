@@ -3,9 +3,133 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Formulario viejuners</title>
   </head>
   <body>
-    <h1>PRUEBAS</h1>
+    <header>
+      <h1>Club de la tercera edad de Entrepenes - Asturias</h1>
+    </header>
+    <form>
+      <h2>Club Viejuners</h2>
+      <fieldset>
+        <legend>Tu información personal:</legend>
+        <label for="nombre">Nombre</label><br />
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          autofocus
+          placeholder="Escriba aquí su nombre"
+          tabindex="0"
+          required
+        />
+        <br />
+
+        <label for="apellidos">Apellidos</label><br />
+        <input
+          type="text"
+          name="apellidos"
+          id="apellidos"
+          placeholder="Escriba aquí su apellido"
+          tabindex="0"
+          required
+        />
+        <br />
+
+        <label for="edad">Edad</label><br />
+        <input
+          type="number"
+          name="edad"
+          id="edad"
+          min="18"
+          max="120"
+          placeholder="18 - 120"
+          tabindex="0"
+          required
+        />
+        <br />
+        <hr />
+
+        <p>Género:</p>
+        <label for="femenino">Femenino</label>
+        <input
+          type="radio"
+          name="sexo"
+          id="femenino"
+          value="Femenino"
+          tabindex="0"
+          required
+        />
+
+        <label for="masculino">Masculino</label>
+        <input
+          type="radio"
+          name="sexo"
+          id="masculino"
+          value="Masculino"
+          tabindex="0"
+        />
+
+        <label for="otro">Otro</label>
+        <input type="radio" name="sexo" id="otro" value="Otro" tabindex="0" />
+        <hr />
+
+        <label for="viejuner">Me siento viejuner:</label>
+        <input
+          type="checkbox"
+          name="viejuner"
+          id="viejuner"
+          value="Yes"
+          tabindex="0"
+        />
+        <hr />
+
+        <label for="personalinfo">Escribe algo sobre tí:</label><br />
+        <textarea
+          name="personalinfo"
+          id="personalinfo"
+          rows="8"
+          placeholder="Mi día perfecto sería uno en el que..."
+          maxlength="300"
+          tabindex="0"
+        ></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Tus datos de contacto:</legend>
+        <label for="email">Correo electrónico</label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          placeholder="Escribe aquí tu email"
+          tabindex="0"
+        /><br />
+
+        <label for="telefono">Número de teléfono</label><br />
+        <input
+          type="tel"
+          name="telefono"
+          id="telefono"
+          placeholder="Escribe aquí tu nº de telf"
+          maxlength="9"
+          minlength="9"
+          pattern="[6-9][0-9]{8}"
+          tabindex="0"
+        />
+      </fieldset>
+
+      <fieldset>
+        <input
+          type="reset"
+          name="reset"
+          id="reset"
+          value="Borrar mis datos"
+          tabindex="0"
+        />
+        <input type="submit" value="Enviar mis datos" tabindex="0" />
+      </fieldset>
+    </form>
   </body>
 </html>
