@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario viejuners</title>
+    <style>
+      form {
+        max-width: 600px;
+      }
+
+      input {
+        margin-bottom: 10px;
+      }
+
+      textarea {
+        margin-top: 10px;
+        border-width: 2px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -11,8 +25,8 @@
     </header>
     <form>
       <h2>Club Viejuners</h2>
-      <fieldset>
-        <legend>Tu información personal:</legend>
+      <fieldset style="background-color: rgb(254, 236, 165)">
+        <legend><b>Tu información personal:</b></legend>
         <label for="nombre">Nombre</label><br />
         <input
           type="text"
@@ -95,8 +109,8 @@
         ></textarea>
       </fieldset>
 
-      <fieldset>
-        <legend>Tus datos de contacto:</legend>
+      <fieldset style="background-color: rgb(151, 229, 162)">
+        <legend><b>Tus datos de contacto:</b></legend>
         <label for="email">Correo electrónico</label><br />
         <input
           type="email"
@@ -120,15 +134,16 @@
         />
       </fieldset>
 
-      <fieldset>
+      <fieldset style="background-color: rgb(150, 221, 223)">
+        <legend><b>Acciones:</b></legend>
         <input
           type="reset"
           name="reset"
           id="reset"
-          value="Borrar mis datos"
+          value="Borrar"
           tabindex="0"
         />
-        <input type="submit" value="Enviar mis datos" tabindex="0" />
+        <input type="submit" value="Enviar" tabindex="0" />
       </fieldset>
     </form>
   </body>
